@@ -1,0 +1,52 @@
+.table {
+  :global {
+    .ant-table td {
+      white-space: nowrap;
+    }
+    .ant-table-content {
+      .status-dot {
+        position: absolute;
+        top: 6px; 
+        width: 10px;
+        height: 10px;
+        background-color: #62bd19;
+        border-radius: 50%;
+        &.revise {
+          background-color: #FF9900;
+        }
+        &.request_review {
+          background-color: #025ECB;
+        }
+        &.requester_require_poa {
+          background-color: #025ECB;
+        }
+        &.requester_for_workflow {
+          background-color: #025ECB;
+        }
+        &.acknowledge {
+          background-color: #FF9900;
+        }
+      }
+      .status-text {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.customTable {
+  :global {
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+}
+
+.mt10 {
+  margin-top: 45px;
+  :global {
+    .ant-table-cell {
+      background-color: #ffffff;
+    }
+  }
+}
